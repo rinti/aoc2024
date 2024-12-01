@@ -17,7 +17,5 @@ for i in range(len(left)):
     count = right_counter[left[i]]
     if count > 0:
         similarity_scores.append(right_counter[left[i]] * left[i])
-    else:
-        similarity_scores.append(0)
 
 print(sum(similarity_scores))
